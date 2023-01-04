@@ -24,28 +24,28 @@
     <main>
     <section class="hero">
         <div class="hero__container">
-        <p class="pretitle--hero pretitle">A hair salon for men in Kyiv</p>
-        <h1 class="heading--hero">BarberShop</h1>
-        <p class="hero__paragraph">We are experts in trendy men's haircuts.
+        <p class="pretitle--hero">A hair salon for men in Kyiv</p>
+        <h1 class="heading heading--hero">BarberShop</h1>
+        <p class="paragraph hero__paragraph">We are experts in trendy men's haircuts.
         We work quickly, carefully and with style.</p>
         </div>
     </section>
     <section class="section about">
         <div class="container">
         <p class="pretitle">About</p>
-        <h2 class="heading--about">Best Barbershop in your city</h2>
-        <p class="about__paragraph">If you want to add more confidence to your image, you should visit us</p>
-        <p class="about__paragraph--wide">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
+        <h2 class="heading heading--about">Best Barbershop in your city</h2>
+        <p class="about__paragraph paragraph">If you want to add more confidence to your image, you should visit us</p>
+        <p class="about__paragraph--wide paragraph">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
         of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
         Therefore, we are always ready to improve everyone who comes to us!</p>
-        <button class="button--about button">online-booking</button>
+        <button class="button button--about">online-booking</button>
         </div>
     </section>
     <section class="section services">
         <div class="container">
         <p class="pretitle--services pretitle">Spend your time with the best masters</p>
-        <h2 class="heading--services">Services and prices</h2>
-        <ul class="sevices__list list">
+        <h2 class="heading heading--services">Services and prices</h2>
+        <ul class="list list--services">
             <li class="services__item item">
                 <p class="services__name">Men's haircut</p>
                 <svg>
@@ -111,7 +111,7 @@
         <p class="pretitle">old traditional school</p>
         <h2 class="heading">¿Why people come to us?</h2>
         <p class="advantage__paragraph paragraph">Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
-        <ul class="advantage__list list">
+        <ul class="list advantage__list">
             <li class="advantage__item item">
                 <h3 class="advantage__number">600</h3>
                 <svg>
@@ -260,10 +260,12 @@
         <div class="container">
             <h2 class="visually-hidden">Gallery</h2>
             <p class="pretitle">In Latin, "barba" means "beard"</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <ul class="list list--gallery">
+                <li class="item"><img src="" alt=""></li>
+                <li class="item"><img src="" alt=""></li>
+                <li class="item"><img src="" alt=""></li>
+                <li class="item"><img src="" alt=""></li>
+            </ul>
         </div>
     </section>
 </main>
@@ -272,18 +274,18 @@
             <div class="booking">
                 <h2 class="heading--booking">Online-booking</h2>
                 <form class="footer__form form">
-                    <input type="name" name="name" placeholder="NAME*" />
-                    <input type="tel" name="phone" placeholder="PHONE*" />
-                    <textarea name="message" placeholder="MESSAGE"></textarea>
+                    <input type="name" name="name" placeholder="NAME*" class="footer__input" />
+                    <input type="tel" name="phone" placeholder="PHONE*" class="footer__input" />
+                    <textarea name="message" placeholder="MESSAGE" class="footer__textarea"></textarea>
                     <button class="button" type="submit">Send</button>
                 </form>
             </div>
             <div class="contacts">
-                <h2 class="heading--contacts">contacts</h2>
+                <h2 class="heading--contacts">Contacts</h2>
                 <address class="contacts__adress">
-                <ul class="contacts__list list">
+                <ul class="list--contacts list">
                     <li class="contacts__item item">
-                        <a class="contacts__link link" href="https://goo.gl/maps/YDsGZ3hmECrZk2ci8" rel="noopener noreferrer nofollow">
+                        <a class="contacts__link contacts__link--map link" href="https://goo.gl/maps/YDsGZ3hmECrZk2ci8" rel="noopener noreferrer nofollow">
                         <svg>
                             <use></use>
                         </svg>
@@ -309,14 +311,14 @@
                 </ul>
                 </address>
                 <h3 class="hours">Working hours</h3>
-                <p class="contacts__paragraph">Every day from 9:00 to 22:00</p>
+                <p class="contacts__paragraph paragraph">Every day from 9:00 to 22:00</p>
             </div>
         </footer>
             <div class="lowest">
                 <p class="copyright">&copy; Copyright 2020</p>
-                <ul class="lowest__list list">
-                    <li><a href="#" class="lowest__link">Instagram</a></li>
-                    <li><a href="#" class="lowest__link">Youtube</a></li>
+                <ul class="list--lowest list">
+                    <li class="item"><a href="#" class="lowest__link">Instagram</a></li>
+                    <li class="item"><a href="#" class="lowest__link">Youtube</a></li>
                 </ul>
             </div>
         </div>

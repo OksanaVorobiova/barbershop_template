@@ -6,7 +6,7 @@ body {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 31px;
+    padding: 84px 31px;
 }
 
 .section {
@@ -18,6 +18,8 @@ body {
 }
 
 .pretitle {
+    display: block;
+
     font-family: OpenSans, sans-serif;
     font-weight: 600;
     font-size: 11px;
@@ -26,6 +28,8 @@ body {
     text-transform: uppercase;
     color: $headingsColor;
 
+    margin: 0;
+
     &::before {
         content: '';
         width: 60px;
@@ -33,7 +37,6 @@ body {
         background-color: $headingsColor;
     }
 
-    &--hero,
     &--services {
         color: $textOnBgImage;
     }
@@ -60,6 +63,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.05em;
 
+    margin: 20px 0 0 0;
+
     &--about {
         font-size: 28px;
     }
@@ -78,6 +83,11 @@ body {
     &--hero {
         font-size: 48px;
     }
+
+    &--booking,
+    &--contacts {
+        margin: 0;
+    }
 }
 
 .button {
@@ -95,7 +105,55 @@ body {
     line-height: 1.4;
     letter-spacing: 0.09em;
 
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+
     &--about {
         color: $headingsColor;
+
+        margin: 40px 0 0 0;
+    }
+}
+
+.paragraph {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: $paragraphColor;
+
+    margin: 20px 0 0 0;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.link {
+    display: inline-block;
+}
+
+.list {
+    margin-top: 44px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    &--gallery {
+        margin-top: 71px;
+    }
+
+    &--contacts {
+        margin-top: 40px;
+    }
+
+    &--lowest {
+        margin-top: 0;
+    }
+
+    &--services {
+        padding: 30px 20px 30px 40px;
     }
 }

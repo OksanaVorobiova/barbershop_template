@@ -1,0 +1,24 @@
+.advantage__paragraph {
+    font-size: 18px;
+    line-height: 1.67;
+
+}
+
+.advantage__number,
+.advantage__description {
+    font-family: OpenSans, sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $headingsColor;
+}
+
+.advantage__number {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.advantage__description {
+    font-weight: 600;
+    font-size: 11px;
+}

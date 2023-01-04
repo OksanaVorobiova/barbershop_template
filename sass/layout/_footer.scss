@@ -1,0 +1,78 @@
+.footer__input::placeholder,
+.footer__textarea::placeholder {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: $textOnBgImage;
+} 
+
+.footer__input:hover,
+.footer__input:focus,
+.footer__textarea:hover,
+.footer__textarea:focus {
+    
+    &::placeholder {
+        color: $primaryBackgroundColor;
+    }
+}
+
+.footer__input,
+.footer__textarea {
+    border-bottom: 1px solid $textOnBgImage;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $primaryBackgroundColor;
+    }
+}
+
+.contacts__link { 
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $textOnBgImage;
+    text-decoration: none;
+
+    &--map {
+        font-weight: 700;
+    }
+}
+
+.hours {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    color: $primaryBackgroundColor;
+    text-transform: uppercase;
+}
+
+.contacts__paragraph {
+    font-size: 18px;
+    line-height: 1.67;
+    color: $textOnBgImage;
+}
+
+/* Post-footer */
+
+.copyright,
+.lowest__link {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: $textOnBgImage;
+}
+
+.lowest__link {
+    color: $headingsColor;
+    text-decoration: none;
+}
