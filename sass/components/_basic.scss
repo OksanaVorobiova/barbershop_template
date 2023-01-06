@@ -7,6 +7,10 @@ body {
     margin: 0 auto;
     overflow: hidden;
     padding: 84px 31px;
+
+    &--advantage {
+        padding: 104px 31px 64px 31px;
+    }
 }
 
 .section {

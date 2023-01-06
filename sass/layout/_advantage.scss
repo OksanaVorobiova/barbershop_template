@@ -7,18 +7,68 @@
 .advantage__number,
 .advantage__description {
     font-family: OpenSans, sans-serif;
-    line-height: 1.4;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.05em;
     color: $headingsColor;
 }
 
 .advantage__number {
+    display: inline-block;
     font-weight: 700;
     font-size: 42px;
+
+    margin: 0;
 }
 
 .advantage__description {
+    display: block;
+
     font-weight: 600;
     font-size: 11px;
+
+    margin: 6px 0 0;
+}
+
+.advantage__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    
+}
+
+.plus {
+    display: inline-block;
+
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    color: $btnBorderAndAccent;
+
+    margin: 0;
+}
+
+.advantage__item {
+    background-color: $itemsBgColor;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+   min-width: 193px;
+
+   &--content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 122px;
+   }
 }
