@@ -1,3 +1,7 @@
+.barbers {
+    background-color: $itemsBgColor;
+}
+
 .barbers__name,
 .barbers__description {
     font-family: OpenSans, sans-serif;
@@ -21,3 +25,30 @@
 
     margin: 8px 0 0 0;
 }
+
+.socials {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    &__item:hover,
+    &__item:focus {
+        fill: $btnBorderAndAccent;
+    }
+
+}
+
+.circle {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    background-color: $primaryBackgroundColor
+}
+
