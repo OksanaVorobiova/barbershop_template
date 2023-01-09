@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="header__container container">
+        <div class="container container--header">
             <svg class="header__logo" width="68.93" height="55.46">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
             </svg> 
@@ -149,7 +149,15 @@
         <h2 class="heading">Our barbers</h2>
         <ul class="list barbers__list">
             <li class="barbers__item item">
-                <img />
+                <img
+                srcset="./images/barbers/barber-1.jpg 418w,
+                        ./images/barbers/barber-1@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/barbers/barber-1.jpg"
+                alt="the first barber"
+                class="image"
+                />
                 <h3 class="barbers__name">John Smith</h3>
                 <p class="barbers__description">Extreme Barber</p>
                 <ul class="list socials">
@@ -184,7 +192,15 @@
                 </ul>
             </li>
             <li class="barbers__item item">
-                <img />
+                <img 
+                srcset="./images/barbers/barber-2.jpg 418w,
+                        ./images/barbers/barber-2@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/barbers/barber-2.jpg"
+                alt="the second barber"
+                class="image"
+                />
                 <h3 class="barbers__name">Michele Doe</h3>
                 <p class="barbers__description">Extreme Barber</p>
                 <ul class="list socials">
@@ -219,7 +235,15 @@
                 </ul>
             </li>
             <li class="barbers__item item">
-                <img />
+                <img 
+                srcset="./images/barbers/barber-3.jpg 418w,
+                        ./images/barbers/barber-3@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/barbers/barber-3.jpg"
+                alt="the third barber"
+                class="image"
+                />
                 <h3 class="barbers__name">Alan Black</h3>
                 <p class="barbers__description">Extreme Barber</p>
                 <ul class="list socials">
@@ -261,10 +285,42 @@
             <h2 class="visually-hidden">Gallery</h2>
             <p class="pretitle">In Latin, "barba" means "beard"</p>
             <ul class="list list--gallery">
-                <li class="item"><img src="" alt=""></li>
-                <li class="item"><img src="" alt=""></li>
-                <li class="item"><img src="" alt=""></li>
-                <li class="item"><img src="" alt=""></li>
+                <li class="item"><img 
+                    srcset="./images/gallery/gallery-1.jpg 418w,
+                        ./images/gallery/gallery-1@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/gallery/gallery-1.jpg"
+                alt="the first picture in the gallery"
+                class="image--gallery"
+                    /></li>
+                <li class="item"><img 
+                     srcset="./images/gallery/gallery-2.jpg 418w,
+                        ./images/gallery/gallery-2@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/gallery/gallery-2.jpg"
+                alt="the second picture in the gallery"
+                class="image--gallery"
+                    /></li>
+                <li class="item"><img 
+                     srcset="./images/gallery/gallery-3.jpg 418w,
+                        ./images/gallery/gallery-3@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/gallery/gallery-3.jpg"
+                alt="the third picture in the gallery"
+                class="image--gallery"
+                    /></li>
+                <li class="item"><img 
+                     srcset="./images/gallery/gallery-4.jpg 418w,
+                        ./images/gallery/gallery-4@2x.jpg 836w
+                        "
+                sizes="(min-width: 480px) 418px, 100vw"
+                src="./images/gallery/gallery-4.jpg"
+                alt="the fourth picture in the gallery"
+                class="image--gallery"
+                    /></li>
             </ul>
         </div>
     </section>

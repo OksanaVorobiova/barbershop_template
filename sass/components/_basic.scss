@@ -12,6 +12,10 @@ body {
         padding: 104px 31px 64px 31px;
     }
 
+    &--header {
+        max-width: 480px;
+    }
+
 }
 
 .section {
@@ -166,4 +170,11 @@ body {
     &--services {
         padding: 30px 20px 30px 40px;
     }
+}
+
+.image {
+    display: inline-block;
+    margin-top: 64px;
+
+   
 }
