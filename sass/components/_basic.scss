@@ -2,130 +2,91 @@ body {
    font-family: 'OpenSans', sans-serif; 
 }
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 84px 31px;
 
-    &--advantage {
+    .container--advantage {
+        @extend %container;
         padding: 104px 31px 64px 31px;
     }
 
-    &--header {
-        max-width: 480px;
-    }
 
-}
 
 .section {
     margin: 0 auto;
 }
 
-.item {
-    list-style-type: none;
-}
+
 
 .pretitle {
-    display: block;
+    @extend %pretitle;
+}
+   
 
-    font-family: OpenSans, sans-serif;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $headingsColor;
-
-    margin: 0;
-
-    &::before {
+.pretitle::before {
         content: '';
         width: 60px;
         height: 1px;
         background-color: $headingsColor;
-    }
+}
 
-    &--services {
+.pretitle--services {
+        @extend %pretitle;
         color: $textOnBgImage;
-    }
+}
 
-    &--hero::before,
-    &--services::before {
+.pretitle--hero::before,
+.pretitle--services::before {
         content: ' ';
         width: 60px;
         height: 1px;
         background-color: $textOnBgImage;
-    }
 }
+
 
 .section {
-    margin: 0;
-    max-width: 480px;
+   @extend %section;
 }
 
-.heading {
-    color: $headingsColor;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
 
-    margin: 20px 0 0 0;
+    
 
-    &--about {
+    .heading--about {
+        @extend %heading;
         font-size: 28px;
     }
 
-    &--services {
+    .heading--services {
+        @extend %heading;
         font-size: 40px;
     }
 
-    &--booking,
-    &--contacts,
-    &--services,
-    &--hero {
+    .heading--booking,
+    .heading--contacts,
+    .heading--services,
+    .heading--hero {
+        @extend %heading;
         color: $primaryBackgroundColor;
     }
 
-    &--hero {
+    .heading--hero {
+        @extend %heading;
         font-size: 48px;
     }
 
-    &--booking,
-    &--contacts {
+    .heading--booking,
+    .heading--contacts {
+        @extend %heading;
+        text-align: center;
         margin: 0;
     }
-}
-
-.button {
-    border: 1px solid $btnBorderAndAccent;
-    width: 160px;
-    height: 40px;
-    border-radius: 25px;
-    color: $primaryBackgroundColor;
-    background-color: transparent;
-
-    font-family: OpenSans, sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 1.4;
-    letter-spacing: 0.09em;
-
-    margin-top: 44px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
 
 
-    &--about {
-        color: $headingsColor;
 
-        margin: 40px 0 0 0;
-    }
+
+.button-about {
+    @extend %button;
+    color: $headingsColor;
+
+    margin: 40px 0 0 0;
 }
 
 .paragraph {
@@ -145,20 +106,24 @@ body {
     display: inline-block;
 }
 
-.list {
-    margin-top: 44px;
-    margin-bottom: 0;
-    padding-left: 0;
 
-    &--gallery {
+    
+
+    .list--gallery {
+        @extend %list;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         margin-top: 71px;
     }
 
-    &--contacts {
+    .list--contacts {
+        @extend %list;
         margin-top: 40px;
     }
 
-    &--lowest {
+    .list--lowest {
+        @extend %list;
         margin-top: 0;
 
         display: flex;
@@ -167,14 +132,13 @@ body {
         margin-bottom: 20px;
     }
 
-    &--services {
+    .list--services {
+        @extend %list;
         padding: 30px 20px 30px 40px;
     }
-}
+
 
 .image {
     display: inline-block;
-    margin-top: 64px;
-
-   
+    margin-top: 64px; 
 }

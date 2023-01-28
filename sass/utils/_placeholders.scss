@@ -1,0 +1,68 @@
+%container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 84px 31px;
+}
+
+%pretitle {
+    display: block;
+    
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $headingsColor;
+    
+    margin: 0;
+}
+
+%section {
+    margin: 0;
+    max-width: 480px;
+}
+
+%heading {
+    color: $headingsColor;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    
+    margin: 20px 0 0 0;
+}
+
+%list {
+    margin-top: 44px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+%item {
+    list-style-type: none;
+}
+
+%button {
+    border: 1px solid $btnBorderAndAccent;
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    color: $primaryBackgroundColor;
+    background-color: transparent;
+
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.09em;
+
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

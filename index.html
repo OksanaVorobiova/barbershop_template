@@ -12,13 +12,36 @@
 </head>
 <body>
     <header>
-        <div class="container container--header">
+        <div class="container--header">
             <svg class="header__logo" width="68.93" height="55.46">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg> 
-            <svg class="header__button" width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
+            <button class="js-open-menu" >
+                <svg class="header__button" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu">
+            <button class="menu__close">
+                <svg class="menu_close--icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#services">Services and prices</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#barbers">Barbers</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <a class="menu__link--phone" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="button--menu">online-booking</button>
+            <ul class="menu__socials">
+                <li class="menu__item"><a class="menu__link" href="#">Instagram</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Youtube</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -30,7 +53,7 @@
         We work quickly, carefully and with style.</p>
         </div>
     </section>
-    <section class="section about">
+    <section class="section about" id="about">
         <div class="container">
         <p class="pretitle">About</p>
         <h2 class="heading heading--about">Best Barbershop in your city</h2>
@@ -41,16 +64,17 @@
         <button class="button button--about">online-booking</button>
         </div>
     </section>
-    <section class="section services">
+    <section class="section services" id="services">
         <div class="container">
         <p class="pretitle--services pretitle">Spend your time with the best masters</p>
         <h2 class="heading heading--services">Services and prices</h2>
         <ul class="list list--services">
             <li class="services__item item">
                 <p class="services__name">Men's haircut</p>
-                <svg>
+                <div class="rectangle" width="162px" height="1"></div> 
+               <!-- <svg>
                     <use></use>
-                </svg>
+                </svg> -->
                 <p class="services__price">from 300 uah</p>
             </li>
             <li class="services__item item">
@@ -143,7 +167,7 @@
         </ul>
         </div>
     </section>
-    <section class="section barbers">
+    <section class="section barbers" id="barbers">
         <div class="container">
         <p class="pretitle">for true enjoyers of the atmosphere</p>
         <h2 class="heading">Our barbers</h2>
@@ -325,10 +349,9 @@
         </div>
     </section>
 </main>
-    <footer class="footer contacts">
-        <div class="container footer__container">
+    <footer class="footer">
             <div class="booking">
-                <h2 class="heading--booking">Online-booking</h2>
+                <h2 class="heading heading--booking">Online-booking</h2>
                 <form class="footer__form form">
                     <input  type="name" name="name" placeholder="NAME*" class="footer__input" />
                     <input  type="tel" name="phone" placeholder="PHONE*" class="footer__input" />
@@ -336,8 +359,8 @@
                     <button class="button" type="submit">Send</button>
                 </form>
             </div>
-            <div class="contacts">
-                <h2 class="heading--contacts">Contacts</h2>
+            <div class="contacts" id="contacts">
+                <h2 class="heading heading--contacts">Contacts</h2>
                 <address class="contacts__adress">
                 <ul class="list--contacts list">
                     <li class="contacts__item item">
@@ -368,7 +391,6 @@
                 </address>
                 <h3 class="hours">Working hours</h3>
                 <p class="contacts__paragraph paragraph">Every day from 9:00 to 22:00</p>
-            </div>
         </footer>
             <div class="lowest">
                 <ul class="list--lowest list">
@@ -378,5 +400,6 @@
                 <p class="copyright">&copy; Copyright 2020</p>
             </div>
         </div>
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>

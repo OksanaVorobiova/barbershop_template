@@ -5,3 +5,14 @@
     display: inline-block;
 }
 
+.header__button {
+    transform:translateX(-15%);
+}
+
+.container--header {
+    @extend %container;
+    max-width: 480px;
+    padding: 40px 31px;
+
+    position: relative;
+}
