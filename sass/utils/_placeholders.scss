@@ -3,6 +3,7 @@
     margin: 0 auto;
     overflow: hidden;
     padding: 84px 31px;
+    max-width: 480px;
 }
 
 %pretitle {
@@ -16,11 +17,25 @@
     text-transform: uppercase;
     color: $headingsColor;
     
-    margin: 0;
+    margin: 0 0 0 80px;
+
+    &::before {
+        display: block;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: $headingsColor;
+
+        position: absolute;
+        top: 91px;
+        left: 31px;
+
+        
+    }
 }
 
 %section {
-    margin: 0;
+    margin: 0 auto;
     max-width: 480px;
 }
 
@@ -65,4 +80,19 @@
     margin-right: auto;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    &:hover,
+    &:focus {
+        background-color: $btnBorderAndAccent;
+        color: $primaryBackgroundColor;
+    }
+}
+
+%paragraph {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: $paragraphColor;
+    
+    margin: 20px 0 0 0;
 }

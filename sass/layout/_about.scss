@@ -1,7 +1,21 @@
 .about__paragraph {
+    @extend %paragraph;
     font-size: 16px;
 
     &--wide {
+        @extend %paragraph;
         font-size: 14px;
     }
 }
+
+.heading--about {
+    @extend %heading;
+    font-size: 28px;
+}
+
+.button--about {
+    @extend %button;
+    color: $headingsColor;
+    margin: 40px 0 0 0;
+}
+

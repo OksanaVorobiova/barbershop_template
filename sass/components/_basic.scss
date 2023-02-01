@@ -3,35 +3,19 @@ body {
 }
 
 
-    .container--advantage {
-        @extend %container;
-        padding: 104px 31px 64px 31px;
-    }
-
-
-
-.section {
-    margin: 0 auto;
+.container--advantage {
+    @extend %container;
+    padding: 104px 31px 64px 31px;
 }
 
-
+.container {
+    @extend %container;
+}
 
 .pretitle {
     @extend %pretitle;
 }
    
-
-.pretitle::before {
-        content: '';
-        width: 60px;
-        height: 1px;
-        background-color: $headingsColor;
-}
-
-.pretitle--services {
-        @extend %pretitle;
-        color: $textOnBgImage;
-}
 
 .pretitle--hero::before,
 .pretitle--services::before {
@@ -46,56 +30,24 @@ body {
    @extend %section;
 }
 
-
-    
-
-    .heading--about {
-        @extend %heading;
-        font-size: 28px;
-    }
-
-    .heading--services {
-        @extend %heading;
-        font-size: 40px;
-    }
-
-    .heading--booking,
-    .heading--contacts,
-    .heading--services,
-    .heading--hero {
-        @extend %heading;
-        color: $primaryBackgroundColor;
-    }
-
-    .heading--hero {
-        @extend %heading;
-        font-size: 48px;
-    }
-
-    .heading--booking,
-    .heading--contacts {
-        @extend %heading;
-        text-align: center;
-        margin: 0;
-    }
+.heading--booking,
+.heading--contacts,
+.heading--services,
+.heading--hero {
+    @extend %heading;
+    color: $primaryBackgroundColor;
+}
 
 
-
-
-.button-about {
-    @extend %button;
-    color: $headingsColor;
-
-    margin: 40px 0 0 0;
+.heading--booking,
+.heading--contacts {
+    @extend %heading;
+    text-align: center;
+    margin: 0;
 }
 
 .paragraph {
-    font-family: OpenSans, sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: $paragraphColor;
-
-    margin: 20px 0 0 0;
+    @extend %paragraph;
 }
 
 .visually-hidden {
@@ -106,37 +58,28 @@ body {
     display: inline-block;
 }
 
+.list--gallery {
+    @extend %list;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 71px;
+}
 
-    
+.list--contacts {
+    @extend %list;
+    margin-top: 40px;
+}
 
-    .list--gallery {
-        @extend %list;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 71px;
-    }
+.list--lowest {
+    @extend %list;
+    margin-top: 0;
 
-    .list--contacts {
-        @extend %list;
-        margin-top: 40px;
-    }
+    display: flex;
+    justify-content: flex-end;
 
-    .list--lowest {
-        @extend %list;
-        margin-top: 0;
-
-        display: flex;
-        justify-content: flex-end;
-
-        margin-bottom: 20px;
-    }
-
-    .list--services {
-        @extend %list;
-        padding: 30px 20px 30px 40px;
-    }
-
+    margin-bottom: 20px;
+}
 
 .image {
     display: inline-block;
