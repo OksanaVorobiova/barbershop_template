@@ -46,7 +46,7 @@
   margin: 20px 0 0 0;
 }
 
-.socials, .advantage__list, .list--services, .list--lowest, .list--contacts, .list--gallery, .list {
+.list--gallery, .socials, .advantage__list, .list--services, .list--lowest, .list--contacts, .list {
   margin-top: 44px;
   margin-bottom: 0;
   padding-left: 0;
@@ -124,18 +124,6 @@ body {
 
 .link {
   display: inline-block;
-}
-
-.list--gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  margin-top: 71px;
 }
 
 .list--contacts {
@@ -743,4 +731,16 @@ body {
 .lowest__link {
   color: #303030;
   text-decoration: none;
+}
+
+.list--gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  margin-top: 71px;
 }/*# sourceMappingURL=main.css.map */

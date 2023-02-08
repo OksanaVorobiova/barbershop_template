@@ -60,13 +60,6 @@ body {
     display: inline-block;
 }
 
-.list--gallery {
-    @extend %list;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 71px;
-}
 
 .list--contacts {
     @extend %list;
