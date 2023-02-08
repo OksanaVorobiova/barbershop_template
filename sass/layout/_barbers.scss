@@ -2,6 +2,20 @@
     background-color: $itemsBgColor;
 }
 
+.barber__image {
+    @extend %image;
+    margin-top: 0;
+}
+
+.barbers__item {
+    @extend %item;
+    
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+}
+
+
 .barbers__name,
 .barbers__description {
     font-family: OpenSans, sans-serif;
@@ -27,11 +41,16 @@
 }
 
 .socials {
+    @extend %list;
     margin-top: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__item {
+        @extend %item;
+    }
 
     &__item:not(:last-child) {
             margin-right: 10px;

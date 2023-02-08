@@ -33,7 +33,7 @@
   max-width: 480px;
 }
 
-.heading--about, .heading--booking,
+.heading--about, .heading, .heading--booking,
 .heading--contacts,
 .heading--services,
 .heading--hero {
@@ -46,13 +46,13 @@
   margin: 20px 0 0 0;
 }
 
-.advantage__list, .list--services, .list--lowest, .list--contacts, .list--gallery {
+.socials, .advantage__list, .list--services, .list--lowest, .list--contacts, .list--gallery, .list {
   margin-top: 44px;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.advantage__item, .services__item, .menu__item, .nav__item {
+.socials__item, .barbers__item, .advantage__item, .services__item, .menu__item, .nav__item, .item {
   list-style-type: none;
 }
 
@@ -86,6 +86,11 @@
   letter-spacing: 0.02em;
   color: #555;
   margin: 20px 0 0 0;
+}
+
+.barber__image {
+  display: inline-block;
+  margin-top: 64px;
 }
 
 body {
@@ -146,11 +151,6 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 20px;
-}
-
-.image {
-  display: inline-block;
-  margin-top: 64px;
 }
 
 .button {
@@ -493,6 +493,14 @@ body {
 
 .barbers {
   background-color: #f7f7f7;
+}
+
+.barber__image {
+  margin-top: 0;
+}
+
+.barbers__item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .barbers__name,

@@ -2,7 +2,13 @@ body {
    font-family: 'OpenSans', sans-serif; 
 }
 
+.list {
+    @extend %list;
+}
 
+.item {
+    @extend %item;
+}
 
 .container {
     @extend %container;
@@ -77,14 +83,15 @@ body {
     margin-bottom: 20px;
 }
 
-.image {
-    display: inline-block;
-    margin-top: 64px; 
-}
+
 
 .button {
     @extend %button;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.heading {
+    @extend %heading;
 }
