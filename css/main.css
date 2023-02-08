@@ -1,4 +1,4 @@
-.container--hero, .container--header, .container, .container--advantage {
+.container--advantage, .container--hero, .container--header, .container {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -6,7 +6,7 @@
   max-width: 480px;
 }
 
-.pretitle--services, .pretitle--hero, .pretitle {
+.pretitle--advantage, .pretitle--services, .pretitle--hero, .pretitle {
   display: block;
   font-family: OpenSans, sans-serif;
   font-weight: 600;
@@ -17,7 +17,7 @@
   color: #303030;
   margin: 0 0 0 80px;
 }
-.pretitle--services::before, .pretitle--hero::before, .pretitle::before {
+.pretitle--advantage::before, .pretitle--services::before, .pretitle--hero::before, .pretitle::before {
   display: block;
   content: "";
   width: 60px;
@@ -46,13 +46,13 @@
   margin: 20px 0 0 0;
 }
 
-.list--services, .list--lowest, .list--contacts, .list--gallery {
+.advantage__list, .list--services, .list--lowest, .list--contacts, .list--gallery {
   margin-top: 44px;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.services__item, .menu__item, .nav__item {
+.advantage__item, .services__item, .menu__item, .nav__item {
   list-style-type: none;
 }
 
@@ -80,7 +80,7 @@
   color: #fff;
 }
 
-.about__paragraph--wide, .about__paragraph, .hero__paragraph, .paragraph {
+.advantage__paragraph, .about__paragraph--wide, .about__paragraph, .hero__paragraph, .paragraph {
   font-family: OpenSans, sans-serif;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -90,10 +90,6 @@
 
 body {
   font-family: "OpenSans", sans-serif;
-}
-
-.container--advantage {
-  padding: 104px 31px 64px 31px;
 }
 
 .pretitle--hero::before,
@@ -395,6 +391,10 @@ body {
   margin: 0 4px;
 }
 
+.container--advantage {
+  padding: 104px 31px 99px 31px;
+}
+
 .advantage__paragraph {
   font-size: 18px;
   line-height: 1.67;
@@ -460,6 +460,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 193px;
+  height: 133px;
+}
+.advantage__item:nth-child(2) {
+  margin-top: 35px;
+}
+.advantage__item:nth-child(3) {
+  margin-top: -35px;
 }
 .advantage__item--content {
   display: -webkit-box;
@@ -478,6 +485,10 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 122px;
+}
+
+.pretitle--advantage::before {
+  top: 111px;
 }
 
 .barbers {

@@ -3,10 +3,6 @@ body {
 }
 
 
-.container--advantage {
-    @extend %container;
-    padding: 104px 31px 64px 31px;
-}
 
 .container {
     @extend %container;

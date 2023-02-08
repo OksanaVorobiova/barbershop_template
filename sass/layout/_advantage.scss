@@ -1,4 +1,10 @@
+.container--advantage {
+    @extend %container;
+    padding: 104px 31px 99px 31px;
+}
+
 .advantage__paragraph {
+    @extend %paragraph;
     font-size: 18px;
     line-height: 1.67;
 
@@ -31,11 +37,11 @@
 }
 
 .advantage__list {
+    @extend %list;
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 
-    
 }
 
 .plus {
@@ -51,6 +57,7 @@
 }
 
 .advantage__item {
+    @extend %item;
     background-color: $itemsBgColor;
 
    display: flex;
@@ -58,9 +65,20 @@
    align-items: center;
    justify-content: center;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    min-width: 193px;
+   height: 133px;
+
+   &:nth-child(2) {
+    margin-top: 35px;
+   }
+
+   &:nth-child(3) {
+    margin-top: -35px;
+   }
+
+  
 
    &--content {
     display: flex;
@@ -71,4 +89,12 @@
 
     max-width: 122px;
    }
+}
+
+.pretitle--advantage {
+    @extend %pretitle;
+     
+    &::before {
+        top: 111px;
+    }
 }
