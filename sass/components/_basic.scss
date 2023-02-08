@@ -56,28 +56,6 @@ body {
     display: none;
 }
 
-.link {
-    display: inline-block;
-}
-
-
-.list--contacts {
-    @extend %list;
-    margin-top: 40px;
-}
-
-.list--lowest {
-    @extend %list;
-    margin-top: 0;
-
-    display: flex;
-    justify-content: flex-end;
-
-    margin-bottom: 20px;
-}
-
-
-
 .button {
     @extend %button;
     display: block;

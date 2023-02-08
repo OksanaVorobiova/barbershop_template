@@ -6,7 +6,7 @@
   max-width: 480px;
 }
 
-.pretitle--advantage, .pretitle--services, .pretitle--hero, .pretitle {
+.hours, .pretitle--advantage, .pretitle--services, .pretitle--hero, .pretitle {
   display: block;
   font-family: OpenSans, sans-serif;
   font-weight: 600;
@@ -17,7 +17,7 @@
   color: #303030;
   margin: 0 0 0 80px;
 }
-.pretitle--advantage::before, .pretitle--services::before, .pretitle--hero::before, .pretitle::before {
+.hours::before, .pretitle--advantage::before, .pretitle--services::before, .pretitle--hero::before, .pretitle::before {
   display: block;
   content: "";
   width: 60px;
@@ -46,13 +46,13 @@
   margin: 20px 0 0 0;
 }
 
-.list--gallery, .socials, .advantage__list, .list--services, .list--lowest, .list--contacts, .list {
+.list--gallery, .list--lowest, .list--contacts, .socials, .advantage__list, .list--services, .list {
   margin-top: 44px;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.socials__item, .barbers__item, .advantage__item, .services__item, .menu__item, .nav__item, .item {
+.lowest__item, .contacts__item, .socials__item, .barbers__item, .advantage__item, .services__item, .menu__item, .nav__item, .item {
   list-style-type: none;
 }
 
@@ -93,6 +93,10 @@
   margin-top: 64px;
 }
 
+.lowest__link, .contacts__link {
+  display: inline-block;
+}
+
 body {
   font-family: "OpenSans", sans-serif;
 }
@@ -120,25 +124,6 @@ body {
 
 .visually-hidden {
   display: none;
-}
-
-.link {
-  display: inline-block;
-}
-
-.list--contacts {
-  margin-top: 40px;
-}
-
-.list--lowest {
-  margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 20px;
 }
 
 .button {
@@ -648,6 +633,7 @@ body {
           align-items: center;
   gap: 16px;
   font-family: OpenSans, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -666,6 +652,16 @@ body {
   line-height: 1.4;
   color: #fff;
   text-transform: uppercase;
+}
+.hours::before {
+  position: absolute;
+  top: 5px;
+  background-color: #fff;
+  left: 0;
+}
+
+.contacts__container--low {
+  position: relative;
   margin: 44px 0 0 0;
 }
 
@@ -686,29 +682,57 @@ body {
 
 .contacts {
   padding: 84px 31px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.7))), url(/images/contacts.jpg);
-  background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.7)), url(/images/contacts.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(/images/contacts.jpg);
+  background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(/images/contacts.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.7)), to(rgba(17, 19, 25, 0.7))), url(/images/contacts@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 0.7)), url(/images/contacts@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(/images/contacts@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(/images/contacts@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 }
 .contacts__address {
+  font-style: normal;
   margin-top: 40px;
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
+.list--contacts {
+  margin-top: 40px;
+}
+
 /* Post-footer */
+.list--lowest {
+  position: relative;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.lowest__item:first-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+  top: 10px;
+  left: 148px;
+}
+
 .lowest {
   background-color: #f7f7f7;
   padding: 44px 31px;
