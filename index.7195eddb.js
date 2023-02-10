@@ -1,2 +1,2 @@
 !function(){var e={openBtn:document.querySelector(".js-open-menu"),closeBtn:document.querySelector(".menu__close"),menuEl:document.querySelector(".menu")},n=e.openBtn,t=e.closeBtn,o=e.menuEl;function c(e){e.preventDefault(),o.classList.contains("is-open")||o.classList.add("is-open"),document.body.style.overflow="hidden",n.removeEventListener("click",c),t.addEventListener("click",s)}function s(e){e.preventDefault(),o.classList.contains("is-open")&&o.classList.remove("is-open"),document.body.style.overflow="visible",t.removeEventListener("click",s),n.addEventListener("click",c)}n.addEventListener("click",c)}();
-//# sourceMappingURL=index.507fe599.js.map
+//# sourceMappingURL=index.7195eddb.js.map
