@@ -1,5 +1,3 @@
-
-
 .header__logo,
 .header__button {
     display: inline-block;
@@ -12,9 +10,23 @@
 .container--header {
     @extend %container;
     max-width: 480px;
-    padding: 40px 31px;
+    padding: 40px 31px 208px 31px;
 
     position: relative;
 }
 
+.header {
+    background-image: url('../images/slider/mobile/basic.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/slider/mobile/basic@2x.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+}

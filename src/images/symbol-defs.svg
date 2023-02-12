@@ -57,5 +57,10 @@
 <symbol id="icon-close_24px" viewBox="0 0 32 32">
 <path d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z"></path>
 </symbol>
+<symbol id="icon-Slider-Navigation_1" viewBox="0 0 19 32">
+<path fill="#9da4bd" style="fill: var(--color1, #9da4bd)" d="M10.667 29.867h8.533v2.133h-8.533v-2.133z"></path>
+<path fill="#9da4bd" style="fill: var(--color1, #9da4bd)" d="M10.667 14.933h8.533v2.133h-8.533v-2.133z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M0 0h19.2v2.133h-19.2v-2.133z"></path>
+</symbol>
 </defs>
 </svg>

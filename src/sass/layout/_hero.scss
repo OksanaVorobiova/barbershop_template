@@ -11,13 +11,9 @@
     color: $textOnBgImage;
 
     &::before {
-        top: 46px;
+        top: 7px;
+        left: 0;
     }
-}
-
-.container--hero {
-    @extend %container;
-    padding: 40px 31px;
 }
 
 .heading--hero {
@@ -26,5 +22,6 @@
 }
 
 .hero {
-    padding: 104px 0 208px 0;
+    position: relative;
+    margin-top: 112px;
 }
