@@ -1,4 +1,4 @@
-.container--advantage, .container--header, .container {
+.lowest, .container--advantage, .container--header, .container {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -46,7 +46,7 @@
   margin: 20px 0 0 0;
 }
 
-.list--gallery, .list--lowest, .list--contacts, .socials, .advantage__list, .list--services, .list {
+.slideshow, .list--gallery, .list--lowest, .list--contacts, .socials, .advantage__list, .list--services, .list {
   margin-top: 44px;
   margin-bottom: 0;
   padding-left: 0;
@@ -245,11 +245,16 @@ body {
 .header__logo,
 .header__button {
   display: inline-block;
+  z-index: 100;
 }
 
 .header__button {
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
+}
+
+.header__logo {
+  position: absolute;
 }
 
 .container--header {
@@ -259,18 +264,7 @@ body {
 }
 
 .header {
-  background-image: url("../images/slider/mobile/basic.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .header {
-    background-image: url("../images/slider/mobile/basic@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+  background-color: #191C26;
 }
 
 .hero__paragraph {
@@ -293,7 +287,7 @@ body {
 
 .hero {
   position: relative;
-  margin-top: 112px;
+  margin-top: 168px;
 }
 
 .about__paragraph {
@@ -325,8 +319,7 @@ body {
 }
 
 .services {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/services.jpg);
-  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/services.jpg);
+  background-image: linear-gradient(-70deg, rgba(0, 0, 0, 0.373), rgb(0, 0, 0)), url(../images/services.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -700,16 +693,18 @@ body {
 
 .contacts {
   padding: 84px 31px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/contacts.jpg);
-  background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/contacts.jpg);
+  background-color: #191C26;
+  max-width: 480px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(25, 28, 38)), to(rgba(25, 28, 38, 0.393))), url(../images/contacts.jpg);
+  background-image: linear-gradient(to bottom, rgb(25, 28, 38), rgba(25, 28, 38, 0.393)), url(../images/contacts.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/contacts@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/contacts@2x.jpg);
+    background-image: url(../images/contacts@2x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -730,10 +725,13 @@ body {
 /* Post-footer */
 .list--lowest {
   position: relative;
-  margin-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  top: 0;
+  right: 0;
+  left: 60%;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -748,7 +746,7 @@ body {
   height: 1px;
   width: 60px;
   top: 10px;
-  left: 148px;
+  left: -100px;
 }
 
 .lowest {
@@ -775,6 +773,10 @@ body {
   text-decoration: none;
 }
 
+.footer {
+  background-color: #191C26;
+}
+
 .list--gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,4 +793,47 @@ body {
   position: absolute;
   top: 67px;
   right: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.slideshow,
+.slideshow::after {
+  position: absolute;
+  width: 100%;
+  height: 580px;
+  top: 0px;
+  left: 0px;
+}
+
+.slideshow::after {
+  content: "";
+  background: linear-gradient(-70deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.slideshow {
+  margin-top: 0;
+}
+
+.img-bg-slide {
+  opacity: 0;
+}
+
+.img-bg-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  -webkit-animation: backgroundSlideshow 60s linear infinite 0s;
+          animation: backgroundSlideshow 60s linear infinite 0s;
+}
+
+.active > .img-bg-slide {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

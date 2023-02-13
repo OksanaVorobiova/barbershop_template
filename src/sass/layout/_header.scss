@@ -1,10 +1,15 @@
 .header__logo,
 .header__button {
     display: inline-block;
+    z-index: 100;
 }
 
 .header__button {
     transform:translateX(-15%);
+}
+
+.header__logo {
+    position: absolute;
 }
 
 .container--header {
@@ -16,17 +21,5 @@
 }
 
 .header {
-    background-image: url('../images/slider/mobile/basic.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/slider/mobile/basic@2x.jpg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
+    background-color: $darkBackground;
 }
