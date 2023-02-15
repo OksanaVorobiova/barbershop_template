@@ -7,10 +7,21 @@
     <title>Barbershop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />-->
+    <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./sass/index.scss" />
 </head>
 <body>
+    <div class='fixed-header'>
+        <svg class="header__logo" width="68.93" height="55.46">
+            <use href="./images/symbol-defs.svg#icon-Logo"></use>
+        </svg>
+        <button class="js-open-menu">
+            <svg class="header__button" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            </svg>
+        </button>
+    </div>
     <header class="header">
         <div class="container--header">
             <ul class="slideshow">
