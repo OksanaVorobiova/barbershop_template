@@ -39,9 +39,10 @@
 .advantage__list {
     @extend %list;
     display: flex;
+
     gap: 30px;
     flex-wrap: wrap; 
-
+    justify-content: space-between;
 }
 
 .plus {
@@ -67,7 +68,7 @@
 
    padding-top: 20px;
    padding-bottom: 20px;
-   min-width: 193px;
+   width: 194px;
    height: 133px;
 
    &:nth-child(2) {
