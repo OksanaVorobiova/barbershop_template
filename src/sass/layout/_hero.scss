@@ -24,4 +24,9 @@
 .hero {
     position: relative;
     margin-top: 168px;
+
+    @media (min-width: 768px) {
+        margin: 232px 90px 237px 120px;
+
+    }
 }

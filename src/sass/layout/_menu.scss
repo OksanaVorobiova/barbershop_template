@@ -162,6 +162,11 @@
         }
     }
 
+    &:hover,
+    &:focus {
+        color: $btnBorderAndAccent;
+    }
+
     @media (min-width: 768px) {
         margin: 0;
     }
@@ -169,10 +174,12 @@
 }
 
 .nav {
+    display: none;
     margin-top: 70px;
     margin-bottom: 64px;
 
     @media (min-width: 768px) {
+        display: block;
         margin: 0;
         display: flex;
         justify-content: space-between;
@@ -234,7 +241,10 @@
 }
 
 .menu__contacts--wrapper {
+    display: none;
+
     @media (min-width: 768px) {
+        display: block;
         position: absolute;
         top: 40px;
         right: 20px;

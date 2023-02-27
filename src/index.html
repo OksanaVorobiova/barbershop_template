@@ -35,18 +35,34 @@
         <div class="container--header">
             <ul class="slideshow">
                 <li class="active">
-                    <img class="img-bg-slide" srcset="./images/slider/mobile/basic.jpg 1x, 
-                                       ./images/slider/mobile/basic@2x.jpg 2x" src="./images/slider/mobile/basic.jpg"
+                    <img class="img-bg-slide" srcset="./images/slider/mobile/basic.jpg 480w, 
+                                       ./images/slider/mobile/basic@2x.jpg 960w,
+                                       ./images/slider/tablet/barber-1-tab.jpg 570w,
+                                       ./images/slider/tablet/barber-1-tab@2x.jpg 1140w,
+                                       ./images/slider/desktop/barber-1-desk.jpg 1070w,
+                                       ./images/slider/desktop/barber-1-desk@2x.jpg 2140w" 
+                                    sizes="(min-width: 1600px) 1070px, (min-width: 768px) 570px, (min-width: 480px) 480px, 100vw"
+                                   src="./images/slider/mobile/basic.jpg" 
                         alt="barber-1" />
                 </li>
                 <li>
-                    <img class="img-bg-slide" srcset="./images/slider/mobile/slider-img-2.jpg 1x, 
-                                        ./images/slider/mobile/slider-img-2@2x.jpg 2x"
+                    <img class="img-bg-slide" srcset="./images/slider/mobile/slider-img-2.jpg 480w, 
+                                        ./images/slider/mobile/slider-img-2@2x.jpg 960w,
+                                        ./images/slider/tablet/barber-2-tab.jpg 570w,
+                                        ./images/slider/tablet/barber-2-tab@2x.jpg 1140w,
+                                        ./images/slider/desktop/barber-2-desk.jpg 1070w,
+                                       ./images/slider/desktop/barber-2-desk@2x.jpg 2140w"
+                        sizes="(min-width: 1600px) 1070px, (min-width: 768px) 570px, (min-width: 480px) 480px, 100vw"
                         src="./images/slider/mobile/slider-img-2.jpg" alt="barber-2" />
                 </li>
                 <li>
-                    <img class="img-bg-slide" srcset="./images/slider/mobile/slider-img-3.jpg 1x, 
-                                        ./images/slider/mobile/slider-img-3@2x.jpg 2x"
+                    <img class="img-bg-slide" srcset="./images/slider/mobile/slider-img-3.jpg 480w, 
+                                        ./images/slider/mobile/slider-img-3@2x.jpg 960w,
+                                        ./images/slider/tablet/barber-3-tab.jpg 570w,
+                                        ./images/slider/tablet/barber-3-tab@2x.jpg 1140w,
+                                        ./images/slider/desktop/barber-3-desk.jpg 1070w,
+                                       ./images/slider/desktop/barber-3-desk@2x.jpg 2140w"
+                        sizes="(min-width: 1600px) 1070px, (min-width: 768px) 570px, (min-width: 480px) 480px, 100vw"
                         src="./images/slider/mobile/slider-img-3.jpg" alt="barber-3" />
                 </li>
             
@@ -95,6 +111,14 @@
         </svg>
         </button>
     </section>
+    <ul class="slider-btns-tab">
+        <li class="slider-tab-item">
+            <button class="js-back-tab slider-btn-tab">Back</button>
+        </li>
+        <li class="slider-tab-item">
+            <button class="js-forward-tab slider-btn-tab">Forward</button>
+        </li>
+    </ul>
     </div>
     </header>
     <main>

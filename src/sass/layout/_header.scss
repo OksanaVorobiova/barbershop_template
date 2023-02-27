@@ -36,12 +36,14 @@
 }
 
 .header {
+    position: relative;
     background-color: $darkBackground;
     display: flex;
 
     @media (min-width: 768px) {
         padding: 0 39px;
         background-color: $primaryBackgroundColor;
+        height: 680px;
     }
 }
 
@@ -98,4 +100,47 @@
     height: 680px;
 
     margin-right: 30px;
+}
+
+/* tab and desktop slider */
+
+.slider-btns-tab {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        display: inline-flex;
+        gap: 26px;
+        
+    }
+}
+
+.slider-tab-item {
+    @extend %item;
+}
+
+.slider-btn-tab {
+    width: 60px;
+    height: 24px;
+    background-color: transparent;
+    color: $textOnBgImage;
+    padding: 0;
+    padding-bottom: 8px;
+    text-align: left;
+
+    border-bottom: 1px solid $textOnBgImage;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    &:hover,
+    &:focus {
+        color: $primaryBackgroundColor;
+        border-color: $primaryBackgroundColor;
+    }
+    
 }

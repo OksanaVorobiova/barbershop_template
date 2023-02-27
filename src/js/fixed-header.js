@@ -10,7 +10,6 @@ export default (() => {
         window.pageYOffset >= 580
             ? showFixedHeader()
             : hideFixedHeader();
-       // window.removeEventListener('scroll', checkPosition);
     }
 
 
