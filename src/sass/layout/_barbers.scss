@@ -72,3 +72,19 @@
     background-color: $primaryBackgroundColor
 }
 
+.container--barbers {
+    @extend %container;
+
+    @media (min-width: 768px) {
+        padding: 100px 159px;
+    }
+}
+
+.pretitle--barbers {
+    @extend %pretitle;
+
+    &::before {
+        top: 107px;
+        left: 159px;
+    }
+}

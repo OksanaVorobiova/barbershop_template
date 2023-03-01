@@ -250,19 +250,20 @@
         </div>
     </section>
     <section class="section barbers" id="barbers">
-        <div class="container">
-        <p class="pretitle">for true enjoyers of the atmosphere</p>
+        <div class="container--barbers">
+        <p class="pretitle--barbers">for true enjoyers of the atmosphere</p>
         <h2 class="heading">Our barbers</h2>
         <ul class="list">
             <li class="barbers__item">
-                <img
-                srcset="./images/barbers/barber-1.jpg 418w,
-                        ./images/barbers/barber-1@2x.jpg 836w
-                        "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/barbers/barber-1.jpg"
-                alt="the first barber"
-                class="barber__image"
+            <img srcset="./images/barbers/mobile/barber-1.jpg 418w,
+                         ./images/barbers/mobile/barber-1@2x.jpg 836w,
+                         ./images/barbers/tablet/barber-1.jpg 450w,
+                         ./images/barbers/tablet/barber-1@2x.jpg 900w"
+
+                sizes="(min-width: 768px) 450px, (min-width: 480px) 418px, 100%"
+                src="./images/barbers/mobile/barber-1.jpg" 
+                alt="the first barber" 
+                class="barber__image" 
                 />
                 <h3 class="barbers__name">John Smith</h3>
                 <p class="barbers__description">Extreme Barber</p>
@@ -298,14 +299,13 @@
                 </ul>
             </li>
             <li class="barbers__item">
-                <img 
-                srcset="./images/barbers/barber-2.jpg 418w,
-                        ./images/barbers/barber-2@2x.jpg 836w
-                        "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/barbers/barber-2.jpg"
-                alt="the second barber"
-                class="barber__image"
+            <img srcset="./images/barbers/mobile/barber-2.jpg 418w,
+                         ./images/barbers/mobile/barber-2@2x.jpg 836w,
+                         ./images/barbers/tablet/barber-2.jpg 450w,
+                         ./images/barbers/tablet/barber-2@2x.jpg 900w"
+                sizes="(min-width: 768px) 450px, (min-width: 480px) 418px, 100%"
+                src="./images/barbers/mobile/barber-2.jpg" 
+                alt="the second barber" class="barber__image" 
                 />
                 <h3 class="barbers__name">Michele Doe</h3>
                 <p class="barbers__description">Extreme Barber</p>
@@ -341,14 +341,14 @@
                 </ul>
             </li>
             <li class="barbers__item">
-                <img 
-                srcset="./images/barbers/barber-3.jpg 418w,
-                        ./images/barbers/barber-3@2x.jpg 836w
-                        "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/barbers/barber-3.jpg"
-                alt="the third barber"
-                class="barber__image"
+            <img srcset="./images/barbers/mobile/barber-3.jpg 418w,
+                         ./images/barbers/mobile/barber-3@2x.jpg 836w,
+                         ./images/barbers/tablet/barber-3.jpg 450w,
+                         ./images/barbers/tablet/barber-3@2x.jpg 900w"
+                sizes="(min-width: 768px) 450px, (min-width: 480px) 418px, 100%"
+                src="./images/barbers/mobile/barber-3.jpg" 
+                alt="the third barber" 
+                class="barber__image" 
                 />
                 <h3 class="barbers__name">Alan Black</h3>
                 <p class="barbers__description">Extreme Barber</p>
@@ -389,41 +389,49 @@
     <section class="section photos">
         <div class="container">
             <h2 class="visually-hidden">Gallery</h2>
-            <p class="pretitle">In Latin, "barba" means "beard"</p>
+            <p class="pretitle--photos">In Latin, "barba" means "beard"</p>
             <ul class="list--gallery">
                 <li class="item"><img 
-                    srcset="./images/gallery/gallery-1.jpg 418w,
-                        ./images/gallery/gallery-1@2x.jpg 836w
+                    srcset="./images/gallery/mobile/gallery-1.jpg 418w,
+                            ./images/gallery/mobile/gallery-1@2x.jpg 836w,
+                            ./images/gallery/tablet/gallery-1.jpg 330w,
+                            ./images/gallery/tablet/gallery-1@2x.jpg 660w
                         "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/gallery/gallery-1.jpg"
+                sizes="(min-width: 768px) 330px, (min-width: 480px) 418px, 100%"
+                src="./images/gallery/mobile/gallery-1.jpg"
                 alt="the first picture in the gallery"
                 class="image--gallery"
                     /></li>
                 <li class="item"><img 
-                     srcset="./images/gallery/gallery-2.jpg 418w,
-                        ./images/gallery/gallery-2@2x.jpg 836w
+                     srcset="./images/gallery/mobile/gallery-2.jpg 418w,
+                        ./images/gallery/mobile/gallery-2@2x.jpg 836w,
+                        ./images/gallery/tablet/gallery-2.jpg 330w,
+                        ./images/gallery/tablet/gallery-2@2x.jpg 660w
                         "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/gallery/gallery-2.jpg"
+                sizes="(min-width: 768px) 330px, (min-width: 480px) 418px, 100%"
+                src="./images/gallery/mobile/gallery-2.jpg"
                 alt="the second picture in the gallery"
                 class="image--gallery"
                     /></li>
                 <li class="item"><img 
-                     srcset="./images/gallery/gallery-3.jpg 418w,
-                        ./images/gallery/gallery-3@2x.jpg 836w
+                     srcset="./images/gallery/mobile/gallery-3.jpg 418w,
+                        ./images/gallery/mobile/gallery-3@2x.jpg 836w,
+                        ./images/gallery/tablet/gallery-3.jpg 330w,
+                        ./images/gallery/tablet/gallery-3@2x.jpg 660w
                         "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/gallery/gallery-3.jpg"
+                sizes="(min-width: 768px) 330px, (min-width: 480px) 418px, 100%"
+                src="./images/gallery/mobile/gallery-3.jpg"
                 alt="the third picture in the gallery"
                 class="image--gallery"
                     /></li>
                 <li class="item"><img 
-                     srcset="./images/gallery/gallery-4.jpg 418w,
-                        ./images/gallery/gallery-4@2x.jpg 836w
+                     srcset="./images/gallery/mobile/gallery-4.jpg 418w,
+                        ./images/gallery/mobile/gallery-4@2x.jpg 836w,
+                        ./images/gallery/tablet/gallery-4.jpg 330w,
+                        ./images/gallery/tablet/gallery-4@2x.jpg 660w
                         "
-                sizes="(min-width: 480px) 418px, 100vw"
-                src="./images/gallery/gallery-4.jpg"
+                sizes="(min-width: 768px) 330px, (min-width: 480px) 418px, 100%"
+                src="./images/gallery/mobile/gallery-4.jpg"
                 alt="the fourth picture in the gallery"
                 class="image--gallery"
                     /></li>

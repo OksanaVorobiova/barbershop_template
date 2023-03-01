@@ -4,5 +4,23 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 71px;
+
+    @media (min-width: 768px) {
+        margin-top: 44px;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+    }
+
 }
 
+.pretitle--photos {
+    @extend %pretitle;
+
+    &::before {
+        @media (min-width: 768px) {
+            top: 107px;
+            left: 39px;
+        }
+    }
+}
