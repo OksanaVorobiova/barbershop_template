@@ -21,19 +21,23 @@ export default (() => {
         document.body.style.overflow = 'hidden';
     
         openBtnArray.forEach(openBtn => openBtn.removeEventListener('click', onOpenBtnClick));
-        closeBtn.addEventListener('click', onCloseBtnClick);
+        menuEl.addEventListener('click', onCloseBtnClick);
     }
 
     function onCloseBtnClick(e) {
-        e.preventDefault();
-
-        if (menuEl.classList.contains('is-open')) {
-            menuEl.classList.remove('is-open');
+        
+        if (e.target.classList.contains('.menu__close')) {
+            e.currentTarget.classList.remove('is-open');
+            document.body.style.overflow = 'visible';
         }
 
-        document.body.style.overflow = 'visible';
+        //if (menuEl.classList.contains('is-open')) {
+         //   menuEl.classList.remove('is-open');
+       // }
 
-        closeBtn.removeEventListener('click', onCloseBtnClick);
+        //document.body.style.overflow = 'visible';
+
+        e.currentTarget.removeEventListener('click', onCloseBtnClick);
         openBtnArray.forEach(openBtn => openBtn.addEventListener('click', onOpenBtnClick));
     
     }

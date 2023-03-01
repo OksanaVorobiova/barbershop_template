@@ -16,6 +16,11 @@ body {
 
 .pretitle {
     @extend %pretitle;
+
+    &--hero,
+    &--services {
+        opacity: 0.4;
+    }
 }
    
 
@@ -25,6 +30,12 @@ body {
         width: 60px;
         height: 1px;
         background-color: $textOnBgImage;
+       
+
+        @media (min-width: 768px) {
+            top: 107px;
+            left: 39px;
+        }
 }
 
 

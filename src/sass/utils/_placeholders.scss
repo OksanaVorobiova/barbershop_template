@@ -4,6 +4,11 @@
     overflow: hidden;
     padding: 84px 31px;
     max-width: 480px;
+
+    @media (min-width: 768px) {
+        padding: 100px 39px;
+        max-width: 768px;
+    }
 }
 
 %pretitle {
@@ -16,6 +21,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $headingsColor;
+    
     
     margin: 0 0 0 80px;
 
@@ -37,6 +43,10 @@
 %section {
     margin: 0 auto;
     max-width: 480px;
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
 }
 
 %heading {
@@ -98,6 +108,10 @@
     color: $paragraphColor;
     
     margin: 20px 0 0 0;
+
+    @media (min-width: 768px) {
+            font-size: 18px;
+    }
 }
 
 %image {

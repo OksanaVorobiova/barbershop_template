@@ -9,6 +9,10 @@
     top: 48px;
     right: 31px;
 
+    &--icon {
+        pointer-events: none;
+    }
+
 }
 
 .menu {

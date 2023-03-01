@@ -3,32 +3,51 @@
     display: inline-block;
     
     font-family: OpenSans, sans-serif;
-    font-weight: 40;
+    font-weight: 400;
     font-size: 14px;
     color: $textOnBgImage;
     line-height: 1.43;
     letter-spacing: 0.02em;
 
     margin: 0;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
 }
 
 .services {
     background-image: linear-gradient(-70deg,
         rgba(0, 0, 0, 0.373),
         rgba(0, 0, 0, 1)),
-                        url(../images/services.jpg); 
+                        url(../images/services/services-mob.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-width: 768px) {
+        background-image: linear-gradient(-70deg,
+                    rgba(0, 0, 0, 0.373),
+                    rgba(0, 0, 0, 1)),
+                url(../images/services/services-tab.jpg);
+    }
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
-                url(../images/services@2x.jpg);
+                url(../images/services/services-mob@2x.jpg);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+
+            @media (min-width: 768px) {
+                    background-image: linear-gradient(-70deg,
+                            rgba(0, 0, 0, 0.373),
+                            rgba(0, 0, 0, 1)),
+                        url(../images/services/services-tab@2x.jpg);
+                }
 }
 }
 
@@ -40,6 +59,10 @@
 .heading--services {
     @extend %heading;
     font-size: 40px;
+
+    @media (min-width: 768px) {
+        font-size: 42px;
+    }
 }
 
 .list--services {
@@ -47,6 +70,10 @@
     padding: 30px 20px 30px 40px;
     
     background-image: linear-gradient(to bottom, rgba(23, 26, 36, 0.9), rgba(17, 19, 25, 0.1));
+
+    @media (min-width: 768px) {
+        padding: 32px 27px 32px 40px;
+    }
 
 }
 

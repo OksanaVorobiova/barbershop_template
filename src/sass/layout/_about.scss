@@ -5,7 +5,12 @@
     &--wide {
         @extend %paragraph;
         font-size: 14px;
+        line-height: 1.9;
     }
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
 }
 
 .heading--about {
@@ -19,3 +24,62 @@
     margin: 40px 0 0 0;
 }
 
+// aside
+
+.about__aside {
+    display: none;
+
+    @media(min-width: 768px) {
+        display: inline-block;
+        width: 330px;
+        height: 500px;
+        margin: 0;
+        
+    }
+
+    &--item {
+        @extend %item;
+    }
+
+    &--list {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+}
+
+.about__content {
+
+    @media(min-width: 768px) {
+        display: inline-block;
+        position: relative;
+    }
+}
+
+.container--about {
+    @extend %container;
+
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.pretitle--about {
+    @extend %pretitle;
+}
+
+.pretitle--about::before {
+    position: absolute;
+
+    @media (min-width: 768px) {
+        top: 7px;
+        left: 0;
+    }
+}

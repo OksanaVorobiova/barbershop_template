@@ -77,7 +77,7 @@
             </button> 
         <div class="menu">
             <button class="menu__close">
-                <svg class="menu_close--icon" width="24" height="24">
+                <svg class="menu__close--icon" width="24" height="24">
                     <use href="./images/symbol-defs.svg#icon-close_24px"></use>
                 </svg>
             </button>
@@ -123,8 +123,30 @@
     </header>
     <main>
     <section class="section" id="about">
-        <div class="container">
-        <p class="pretitle">About</p>
+        <div class="container--about">
+        <aside class="about__aside">
+            <ul class="about__aside--list">
+                <li class="about__aside--item">
+                    <img class="about__aside--img" srcset="./images/about/tablet/about-1-tab.jpg 330w, 
+                                                           ./images/about/tablet/about-1-tab@2x.jpg 660w,
+                                                           ./images/about/desktop/about-1-desk.jpg 270w,
+                                                           ./images/about/desktop/about-1-desk@2x.jpg 540w"
+                        sizes="(min-width: 1600px) 270px, (min-width: 768px) 330px, 100%"
+                        src="./images/about/tablet/about-1-tab.jpg" alt="about-1" />
+                </li>
+                <li class="about__aside--item">
+                    <img class="about__aside--img" srcset="./images/about/tablet/about-2-tab.jpg 330w, 
+                                                           ./images/about/tablet/about-2-tab@2x.jpg 660w,
+                                                           ./images/about/desktop/about-2-desk.jpg 270w,
+                                                           ./images/about/desktop/about-2-desk@2x.jpg 540w"
+                        sizes="(min-width: 1600px) 270px, (min-width: 768px) 330px, 100%" 
+                        src="./images/about/tablet/about-2-tab.jpg"
+                        alt="about-2" />
+                </li>
+            </ul>
+        </aside>
+        <div class="about__content">
+        <p class="pretitle--about">About</p>
         <h2 class="heading--about">Best Barbershop in<br> your city</h2>
         <p class="about__paragraph">If you want to add more confidence to your image, you should visit us</p>
         <p class="about__paragraph--wide">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
@@ -134,6 +156,7 @@
         <button class="button--about">online-booking
         </button>
         </a>
+        </div>
         </div>
     </section>
     <section class="section services" id="services">
@@ -189,9 +212,11 @@
     </section>
     <section class="section advantage">
         <div class="container--advantage">
-        <p class="pretitle--advantage">old traditional school</p>
-        <h2 class="heading">¿Why people come to us?</h2>
-        <p class="paragraph">Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
+        <div class="advantage__content">
+            <p class="pretitle--advantage">old traditional school</p>
+            <h2 class="heading">¿Why people come <br>to us?</h2>
+            <p class="paragraph">Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
+        </div>
         <ul class="advantage__list">
             <li class="advantage__item">
                 <div class="advantage__item--content">
