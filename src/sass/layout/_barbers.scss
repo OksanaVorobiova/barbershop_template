@@ -5,10 +5,15 @@
 .barber__image {
     @extend %image;
     margin-top: 0;
+
+    @media (max-width: 479px) {
+        max-width: 258px;
+    }
 }
 
 .barbers__item {
     @extend %item;
+    text-align: center;
     
     &:not(:last-child) {
         margin-bottom: 64px;
@@ -83,8 +88,19 @@
 .pretitle--barbers {
     @extend %pretitle;
 
-    &::before {
-        top: 107px;
-        left: 159px;
+    @media (min-width: 480px) {
+        &::before {
+                top: 91px;
+                left: 31px;
+            }
     }
+
+    @media (min-width: 768px) {
+        &::before {
+            top: 107px;
+            left: 159px;
+        }
+    }
+
+    
 }

@@ -39,7 +39,7 @@
             background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
                 url(../images/services/services-mob@2x.jpg);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
 
             @media (min-width: 768px) {

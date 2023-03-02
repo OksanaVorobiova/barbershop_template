@@ -57,6 +57,10 @@ body {
     @extend %heading;
     text-align: center;
     margin: 0;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .paragraph {

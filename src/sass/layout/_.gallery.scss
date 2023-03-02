@@ -24,3 +24,14 @@
         }
     }
 }
+
+.image--gallery {
+    @media (max-width: 479px) {
+        max-width: 258px;
+    }
+}
+
+.gallery__item {
+    @extend %item;
+    text-align: center;
+}
