@@ -16,12 +16,20 @@
 .heading--about {
     @extend %heading;
     font-size: 28px;
+
+    @media (min-width: 1600px) {
+        font-size: 42px;
+    }
 }
 
 .button--about {
     @extend %button;
     color: $headingsColor;
     margin: 40px 0 0 0;
+
+    @media (min-width: 1600px) {
+        margin-top: 42px;
+    }
 }
 
 // aside
@@ -37,6 +45,10 @@
         
     }
 
+    @media (min-width: 1600px) {
+        width: 570px;
+    }
+
     &--item {
         @extend %item;
     }
@@ -49,6 +61,10 @@
         flex-direction: column;
         gap: 30px;
         justify-content: space-between;
+
+        @media (min-width: 1600px) {
+            flex-direction: row;
+        }
     }
 
 }
@@ -68,6 +84,11 @@
     @media (min-width: 768px) {
         display: flex;
         gap: 30px;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 100px 100px 120px 0;
+        min-width: 1170px;
     }
 }
 
