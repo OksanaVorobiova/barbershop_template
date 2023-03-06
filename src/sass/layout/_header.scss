@@ -37,6 +37,7 @@
         min-width: 570px;
         margin: 0;
         padding: 40px 20px;
+      //  background-color: $darkBackground;
     }
 
     @media (min-width: 1600px) {
@@ -49,6 +50,8 @@
     position: relative;
     background-color: $darkBackground;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (min-width: 768px) {
         padding: 0 39px;

@@ -5,6 +5,13 @@
     @media (min-width: 768px) {
         padding: 100px 39px 100px 40px;
     }
+
+    @media (min-width: 1600px) {
+        padding: 120px 70px 120px 100px;
+
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .advantage__paragraph {
@@ -56,6 +63,13 @@
     @media(min-width: 768px) {
         margin-left: 239px;
     }
+
+    @media (min-width: 1600px) {
+        margin-left: 0;
+        width: 370px;
+        margin-right: 50px;
+        
+    }
 }
 
 .plus {
@@ -98,6 +112,14 @@
     
    }
 
+   @media (min-width: 768px) {
+    width: 210px;
+   }
+
+   @media (min-width: 1600px) {
+    width: 170px;
+   }
+
   
 
    &--content {
@@ -120,6 +142,11 @@
         @media (min-width: 768px) {
             top: 107px;
             left: 40px;
+        }
+
+        @media (min-width: 1600px) {
+            top: 127px;
+            left: 600px;
         }
     }
 }

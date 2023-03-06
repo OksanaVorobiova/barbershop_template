@@ -83,6 +83,10 @@
     @media (min-width: 768px) {
         padding: 100px 159px;
     }
+
+    @media (min-width: 1600px) {
+        padding: 120px 0;
+    }
 }
 
 .pretitle--barbers {
@@ -102,5 +106,21 @@
         }
     }
 
+    @media (min-width: 1600px) {
+        &::before {
+            top: 127px;
+            left: 0;
+        }
+    }
+
     
+}
+
+.barbers__list {
+    @extend %list;
+
+    @media (min-width: 1600px) {
+        display: flex;
+        gap: 30px;
+    }
 }

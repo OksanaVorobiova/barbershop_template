@@ -7,7 +7,13 @@
 
     @media (min-width: 768px) {
         padding: 100px 39px;
-        max-width: 768px;
+        min-width: 768px;
+    }
+
+    @media (min-width: 1600px) {
+        min-width: 1170px;
+        padding: 120px 0;
+        margin: 0 auto;
     }
 }
 
@@ -35,7 +41,6 @@
         position: absolute;
         top: 91px;
         left: 31px;
-
         
     }
 }
@@ -46,10 +51,12 @@
 
     @media (min-width: 768px) {
         max-width: 768px;
+        
     }
 
     @media (min-width: 1600px) {
         min-width: 1170px;
+        max-width: 1600px;
     }
 }
 
@@ -62,6 +69,7 @@
     letter-spacing: 0.05em;
     
     margin: 20px 0 0 0;
+
 }
 
 %list {
