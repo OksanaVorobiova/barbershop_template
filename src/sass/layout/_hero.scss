@@ -5,7 +5,7 @@
     line-height: 1.625;
     color: $textOnBgImage; 
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         font-size: 18px;
         line-height: 1.67;
     }
@@ -29,7 +29,7 @@
         font-size: 48px;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         font-size: 72px;
     }
 }
@@ -43,7 +43,7 @@
 
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         margin-left: 0;
     }
 }

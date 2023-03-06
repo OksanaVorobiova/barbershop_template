@@ -97,7 +97,7 @@
         right: -30px;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         display: block;
         top: 70px;
         left: 0;
@@ -133,7 +133,7 @@
         min-width: 768px;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         margin: 0;
         padding: 130px 10px 130px 215px;
         min-width: 50%;
@@ -221,7 +221,7 @@
             background-position: center;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         padding: 130px 100px 120px 100px;
         margin: 0;
         min-width: 50%;
@@ -311,7 +311,7 @@
         justify-content: space-between;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         padding: 56px 215px;
     }
 }
@@ -337,7 +337,7 @@
 .footer {
     background-color: $darkBackground;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         display: flex;
         justify-content: center;
         

@@ -11,11 +11,13 @@
 .header__logo {
     position: absolute;
     fill: $primaryBackgroundColor;
+    cursor: pointer;
 
     &--aside {
         fill: $headingsColor;
+        cursor: pointer;
 
-        @media (min-width: 1600px) {
+        @media (min-width: 1200px) {
             position: absolute;
             right: 32px;
         }
@@ -37,10 +39,11 @@
         min-width: 570px;
         margin: 0;
         padding: 40px 20px;
+        height: 680px;
       //  background-color: $darkBackground;
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         min-width: 1070px;
         padding: 40px 20px 40px 100px;
     }
@@ -114,7 +117,7 @@
 
     margin-right: 30px;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
         width: 155px;
         margin: 0;
         padding: 32px 32px;
@@ -126,7 +129,7 @@
 .slider-btns-tab {
     display: none;
     position: absolute;
-    bottom: 40px;
+    bottom: 80px;
     right: 40px;
     margin: 0;
     padding: 0;
