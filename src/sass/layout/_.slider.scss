@@ -51,7 +51,7 @@
     //top: 0;
     left: 0;
     color: transparent;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -79,7 +79,11 @@
 }
 
 .active {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 100%;
 
     @media (max-width: 479px) {
         display: flex;

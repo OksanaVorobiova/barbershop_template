@@ -8,7 +8,8 @@
     transform:translateX(-15%);
 }
 
-.header__logo {
+.header__logo,
+.header__logo--fixed {
     position: absolute;
     fill: $primaryBackgroundColor;
     cursor: pointer;
@@ -89,7 +90,7 @@
     transition: transform 1s ease-in;
 }
 
-.fixed-header > .header__logo {
+.header__logo--fixed {
     position: absolute;
     top: 10%;
     left: 31px;
