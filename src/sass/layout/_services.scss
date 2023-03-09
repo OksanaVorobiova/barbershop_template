@@ -14,6 +14,29 @@
     @media (min-width: 768px) {
         font-size: 18px;
         line-height: 1.67;
+       
+    }
+}
+
+.services__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: bottom;
+        width: 70%;
+        border-top: 1px dashed $textOnBgImage;
+        height: 4px;
+        margin-right: 4px;
+        margin-left: 2px;
+
+        @media (min-width: 768px) {
+            margin-right: 12px;
+        }
     }
 }
 
@@ -121,16 +144,4 @@
         }
 }
 
-.services__line-container {
-   // display: flex;
-   width: 80%;
-    height: 1px;
-}
-
-.services__line {
-    width: 40%;
-    height: 1px;
-    background-color: $textOnBgImage;
-    margin: 0 4px;
-}
 

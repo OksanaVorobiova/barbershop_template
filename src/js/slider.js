@@ -1,75 +1,63 @@
-export default (() => {
+const refs = {
+  forwardBtn: document.querySelector('.slider-button'),
+  slideshowEl: document.querySelector('.slideshow'),
+  sliderBtnsTab: document.querySelector('.slider-btns-tab'),
+};
 
-    const refs = {
-        forwardBtn: document.querySelector('.slider-button'),
-        slideshowEl: document.querySelector('.slideshow'),
-        sliderBtnsTab: document.querySelector('.slider-btns-tab'),
-    }
-    
-    //links 
-    const { forwardBtn, slideshowEl, sliderBtnsTab, } = refs;
-    
-      
-    // event listeners
-    forwardBtn.addEventListener('click', onForwardBtnClick);
-    sliderBtnsTab.addEventListener('click', onSliderBtnsTab);
-    window.addEventListener('resize', hideMobileBtn);
+//links
+const { forwardBtn, slideshowEl, sliderBtnsTab } = refs;
 
-    // responsive
-    hideMobileBtn();
+// event listeners
+forwardBtn.addEventListener('click', onForwardBtnClick);
+sliderBtnsTab.addEventListener('click', onSliderBtnsTab);
+window.addEventListener('resize', hideMobileBtn);
 
-    function hideMobileBtn() {
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            forwardBtn.classList.add('visually-hidden');
-        } else {
-            forwardBtn.classList.remove('visually-hidden');
-        }
-    }
-    
+// responsive
+hideMobileBtn();
 
-    // mobile click handler
-    function onForwardBtnClick(e) {
-        let activeEl = document.querySelector('.active');
-        let nextLI = activeEl.nextElementSibling;
+function hideMobileBtn() {
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    forwardBtn.classList.add('visually-hidden');
+  } else {
+    forwardBtn.classList.remove('visually-hidden');
+  }
+}
 
-        activeEl.classList.remove('active');
+// mobile click handler
+function onForwardBtnClick(e) {
+  let activeEl = document.querySelector('.active');
+  let nextLI = activeEl.nextElementSibling;
 
-        nextLI ? nextLI.classList.add('active') : makeFirstImgActive();
-       
-    }
+  activeEl.classList.remove('active');
 
-    function makeFirstImgActive() {
-        slideshowEl.lastElementChild.classList.remove('active');
-        slideshowEl.firstElementChild.classList.add('active');
-    }
+  nextLI ? nextLI.classList.add('active') : makeFirstImgActive();
+}
 
-    
-    // tab and desktop click handler
+function makeFirstImgActive() {
+  slideshowEl.lastElementChild.classList.remove('active');
+  slideshowEl.firstElementChild.classList.add('active');
+}
 
-    function onSliderBtnsTab(e) {
+// tab and desktop click handler
 
-        if (e.target.classList.contains('js-forward-tab')) {
-            onForwardBtnClick();
-        } else if (e.target.classList.contains('js-back-tab')) {
-            onBackBtnClick();
-        }
-    }
+function onSliderBtnsTab(e) {
+  if (e.target.classList.contains('js-forward-tab')) {
+    onForwardBtnClick();
+  } else if (e.target.classList.contains('js-back-tab')) {
+    onBackBtnClick();
+  }
+}
 
-    function onBackBtnClick() {
-        let activeEl = document.querySelector('.active');
-        let prevLI = activeEl.previousElementSibling;
-        
+function onBackBtnClick() {
+  let activeEl = document.querySelector('.active');
+  let prevLI = activeEl.previousElementSibling;
 
-        activeEl.classList.remove('active');
+  activeEl.classList.remove('active');
 
-        prevLI ? prevLI.classList.add('active') : makeLastImgActive();
-        
-    }
+  prevLI ? prevLI.classList.add('active') : makeLastImgActive();
+}
 
-    function makeLastImgActive() {
-        slideshowEl.firstElementChild.classList.remove('active');
-        slideshowEl.lastElementChild.classList.add('active');
-    }
-
-   
-});
+function makeLastImgActive() {
+  slideshowEl.firstElementChild.classList.remove('active');
+  slideshowEl.lastElementChild.classList.add('active');
+}

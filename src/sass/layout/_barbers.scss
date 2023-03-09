@@ -55,7 +55,8 @@
 
     &__item {
         @extend %item;
-        transition: fill 0.5s ease-in;
+        transition: fill 0.15s ease-in;
+        cursor: pointer;
     }
 
     &__item:not(:last-child) {
