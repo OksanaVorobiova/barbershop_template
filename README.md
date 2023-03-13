@@ -24,4 +24,4 @@ When preparing this project I have improved my skills in:
 It's a pleasure to me - share my work which is already completed. I'm glad to see your feedback on this project. <br>
 Feel free to contact me: oksanavorobiova3@gmail.com <br>
                          https://www.linkedin.com/in/oksanavorobiova/ <br>
-And have a nice day :)
+And have a nice day <p>:)</p>

@@ -1,0 +1,43 @@
+<header class="header">
+  <include src="./partials/header/header-aside.html"></include>
+  <div class="container--header">
+    <nav class="nav--tab">
+      <include src="./partials/header/navigation.html"></include>
+    </nav>
+    <div class="menu__contacts--wrapper-tab">
+      <include src="./partials/header/menu-contacts.html"></include>
+    </div>
+    <include src="./partials/header/slider.html"></include>
+    <svg class="header__logo" width="68.93" height="55.46">
+      <use href="./images/symbol-defs.svg#icon-Logo"></use>
+    </svg>
+    <button class="js-open-menu">
+      <svg class="header__button" width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+      </svg>
+    </button>
+    <div class="menu">
+      <button class="menu__close">
+        <svg class="menu__close--icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <nav class="nav">
+        <include src="./partials/header/navigation.html"></include>
+      </nav>
+      <div class="menu__contacts--wrapper">
+        <include src="./partials/header/menu-contacts.html"></include>
+      </div>
+      <include src="./partials/utils/menu-socials.html"></include>
+    </div>
+    <include src="./partials/hero.html"></include>
+    <ul class="slider-btns-tab">
+      <li class="slider-tab-item">
+        <button class="js-back-tab slider-btn-tab">Back</button>
+      </li>
+      <li class="slider-tab-item">
+        <button class="js-forward-tab slider-btn-tab">Forward</button>
+      </li>
+    </ul>
+  </div>
+</header>
