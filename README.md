@@ -1,7 +1,7 @@
 # Barbershop
 
 Hi! I'm Oksana and this is my first individual Frontend project - simple single-page website, which introduces a barbershop. 
-This project is built by <a href="https://parceljs.org/">Parcel</a>. You can easily view it on any device you want, because it's design is adaptive.
+This project is built by <a href="https://parceljs.org/" target="_blank">Parcel</a>. You can easily view it on any device you want, because it's design is adaptive.
 
 ## Structure
 
